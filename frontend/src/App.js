@@ -9,6 +9,7 @@ import { CartDrawer } from "@/components/CartDrawer";
 import HomePage from "@/pages/HomePage";
 import TermsPage from "@/pages/TermsPage";
 import PrivacyPage from "@/pages/PrivacyPage";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           </BrowserRouter>
         </ShopifyProvider>
       </LocaleProvider>
+      <Analytics/>       
     </div>
   );
 }
